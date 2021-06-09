@@ -10,6 +10,8 @@ object firstdemo {
       val conf=new SparkConf().setMaster("local[*]").setAppName("test demo")
 
      val sc=new SparkContext(conf)
+
+
     sc.setLogLevel("ERROR")
     val rdd=sc.parallelize(List(1,2,3))
 
